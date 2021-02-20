@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Container, Button, Modal, Spinner, Form, Card } from "react-bootstrap";
+import { Container, Button, Modal, Spinner, Form } from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'universal-cookie';
@@ -43,10 +43,8 @@ class HackList extends Component {
                 {Object.keys(this.state.hackers).map((hackerId) => {
                     let hacker = this.state.hackers[hackerId]
                     return(<div>
-                        <Card className="p-4 m-2">
-                            <h1>{hacker.name}</h1>
-                            <p>{hacker.description}</p>
-                        </Card>
+                        <h1>{hacker.name}</h1>
+                        <p>{hacker.description}</p>
                     
                     </div>)
                 })}

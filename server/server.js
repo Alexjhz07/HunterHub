@@ -15,6 +15,10 @@ let hackers = {
     "name":"Cat Nat",
     "description": "i love hacking"
   },
+  'hacker3':{
+    "name":"Cat Nat",
+    "description": "i love hacking"
+  },
 };
 // // initlizing mongo db
 // MongoClient.connect(uri, function (err, dbtemp) {
@@ -72,6 +76,10 @@ app.get('/get/:id', (req, res) => {
     text:"this is sent from the server " + req.params.id,
   }));
 })
+app.post("/post/hacker", (req, res) => {
+  console.log(req);
+  res.send(JSON.stringify({status: "success"}))
+});
 
 
 app.use('/', express.static("./client/"))
