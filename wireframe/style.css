@@ -23,8 +23,8 @@ header {
 
 #logo {
   box-sizing: border-box;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 20px;
   background-color: red;
 }
 
@@ -41,6 +41,26 @@ ul > a{
 main {
   height: 100%;
   width: 100%;
+  display: grid; 
+  grid-template-rows: 80% 20%;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border: 2px solid black;
+}
+
+#heroLeft {
+  border: 1px solid black;
+}
+
+#heroRight {
+
+}
+
+#slideShow {
+  border: 2px solid black;
 }
 
 footer {
