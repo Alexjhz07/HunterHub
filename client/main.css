@@ -1,3 +1,18 @@
 body {
+<<<<<<< HEAD
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+=======
     background-color: beige !important; 
 }
+>>>>>>> 0621910dd6a8994b5c224d3cc2682bd4010c6b12
