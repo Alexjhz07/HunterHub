@@ -2,3 +2,34 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+body {
+  display: grid; 
+  grid-template-rows: 20% 80% 20%;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+nav {
+  display: flex;
+}
+
+ul > a{
+  text-decoration: none;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
