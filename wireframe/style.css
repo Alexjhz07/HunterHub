@@ -34,6 +34,10 @@ nav {
   justify-content: center;
 }
 
+nav > ul {
+  margin: 2%;
+}
+
 ul > a{
   text-decoration: none;
 }
@@ -48,7 +52,6 @@ main {
 #hero {
   display: grid;
   grid-template-columns: 70% 30%;
-  border: 2px solid black;
 }
 
 #heroLeft {
@@ -56,7 +59,13 @@ main {
 }
 
 #heroRight {
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 20% 30% 50%;
+}
 
+.sideContent {
+  border: 1px solid black;
 }
 
 #slideShow {
