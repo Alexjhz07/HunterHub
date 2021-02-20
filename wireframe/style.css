@@ -5,13 +5,12 @@ html, body {
 
 body {
   display: grid; 
-  grid-template-rows: 20% 80% 20%;
+  grid-template-rows: 10% 80% 10%;
 }
 
 header {
   height: 100%;
   width: 100%;
-  background-color: green;
 }
 
 nav {
@@ -25,7 +24,6 @@ ul > a{
 main {
   height: 100%;
   width: 100%;
-  background-color: purple;
 }
 
 footer {
