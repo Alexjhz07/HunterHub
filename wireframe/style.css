@@ -104,7 +104,8 @@ main {
 }
 
 .container:hover {
-  background-color: black;
+  background-color: rgba(0,0,0,0.6);
+  border: none;
 }
 
 #heroRight > a:hover {
@@ -113,12 +114,10 @@ main {
 
 .sideContent {
   margin: 10px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: black;
 }
 
 #learnMore {
@@ -152,6 +151,7 @@ main {
   padding: 10px;
   margin-top: 200px;
 }
+
 #slideShow > input:focus {
   outline: none !important;
   box-shadow: 0 0 10px #719ECE;
