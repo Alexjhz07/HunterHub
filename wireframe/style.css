@@ -254,6 +254,7 @@ footer {
     height: 0;
     background: radial-gradient(circle,#e4e4e4,#d4d4d4);
     border-radius: 50%;
+    opacity: 50%;
     transition: 0.3s ease;
 }
 
