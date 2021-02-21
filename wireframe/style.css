@@ -58,10 +58,29 @@ main {
 #heroLeft {
   margin: 10px;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 200px;
+}
+
+#heroLeft > h1, #heroLeft > input {
+  position: relative;
+  bottom: 45px;
+}
+
+#heroLeft > h1 {
+  font-size: 60px;
+}
+
+#heroLeft > input {
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
 }
 
 #heroRight {
-  border: 1px solid black;
   display: grid;
   grid-template-rows: 20% 30% 50%;
 }
@@ -69,10 +88,15 @@ main {
 .sideContent {
   margin: 10px;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 #slideShow {
-  height: 100%;
+  height: 250px;
   border: 2px solid black;
   display: flex;
   justify-content: center;
@@ -82,7 +106,7 @@ main {
 .human {
   border: 2px solid blue; 
   width: 20%;
-  height: 100px;
+  height: 200px;
   margin: 20px;
 }
 
