@@ -5,13 +5,11 @@ import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
 
-// this is just an example to show you how we could make calls to the backend
 class HackList extends Component {
 
     constructor(props) {
         super(props);
 
-        // for any state values(bascially like class variables) initialize them here
         this.state = {
             pickerValue: "",
             serverContent: "",
@@ -21,7 +19,6 @@ class HackList extends Component {
         this.updateFromServer();
     }
 
-    // if you want to make class methods, follow this format
     updateFromServer = () => {
         fetch(this.props.url + "/get/hackers").then(res => res.json()).then(res => {
             console.log(res);
