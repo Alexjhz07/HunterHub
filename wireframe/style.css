@@ -85,6 +85,10 @@ main {
   font-size: 25px;
 }
 
+#heroRight > a:hover {
+  margin: 0;
+}
+
 .sideContent {
   margin: 10px;
   border: 1px solid black;
