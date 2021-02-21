@@ -42,7 +42,7 @@ class HackList extends Component {
 
                 {Object.keys(this.state.hackers).map((hackerId) => {
                     let hacker = this.state.hackers[hackerId]
-                    return(<div>
+                    return(<div key={hackerId}>
                         <Card className="p-4 m-2">
                             <h1>{hacker.name}</h1>
                             <p>{hacker.description}</p>

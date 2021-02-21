@@ -28,9 +28,9 @@ class HackerJoin extends Component {
             hackers:"",
             name:"",
             email:"",
+            description:"",
             shouldRe: false,
         }
-        this.updateFromServer();
     }
 
  
@@ -40,8 +40,9 @@ class HackerJoin extends Component {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
-                name: name, 
-                email:email
+                name: this.state.name, 
+                email:this.state.email,
+                description:this.state.description
             })
         };
         fetch(this.props.url + '/post/hacker', requestOptions)
@@ -79,7 +80,10 @@ class HackerJoin extends Component {
                                                                 <Form.Label>Email</Form.Label>
                                                                 <Form.Control   value={this.state.email} onChange={(val)=>this.setState({email: val.target.value})} type="email" placeholder="john@example.com" />
                                                         </Form.Group>
-
+                                                   <Form.Group controlId="description">
+                                                                <Form.Label>Description</Form.Label>
+                                                                <Form.Control   value={this.state.description} onChange={(val)=>this.setState({description: val.target.value})} type="text" placeholder="I love java and c++, and can find all sorts of bugs!" />
+                                                        </Form.Group>
                                                         <Form.Group controlId="formBasicPassword">
                                                                 <Form.Label>Password</Form.Label>
                                                                 <Form.Control isInvalid={this.state.isInvalid} value={this.state.password} onChange={this.passswordChange} type="password" className="" placeholder="Password" />

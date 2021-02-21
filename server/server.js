@@ -77,7 +77,16 @@ app.get('/get/:id', (req, res) => {
   }));
 })
 app.post("/post/hacker", (req, res) => {
-  console.log(req);
+  console.log(req.body);
+  let newh = req.body;
+
+  let id = newh.name.replace(' ', "");
+  hackers[id] = {
+    name: newh.name,
+    email: newh.email,
+    description: newh.description,
+  }
+  console.log(hackers);
   res.send(JSON.stringify({status: "success"}))
 });
 
