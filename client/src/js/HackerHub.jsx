@@ -32,15 +32,12 @@ class HackerHub extends Component {
           <Switch>
             <Route path="/join">
               <div>
-                {/* <Link to='/'><button>Find Hackers</Button></Link> */}
                 <HackerJoin url={this.props.url}  />
               </div>
             </Route>
 
             <Route path="/">
               <div>
-                {/* Welcome to HackHub! */}
-                {/* <Link to='/join'><Button>Become a Hacker</Button></Link> */}
                 <HackList url={this.props.url} />
               </div>
             </Route>

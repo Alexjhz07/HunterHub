@@ -61,27 +61,6 @@ class HackList extends Component {
                     )
                     })}
                 </div>
-                {/* <input
-                    value={this.state.searchTerm}
-                    onChange={(e) => this.setState({ searchTerm: e.target.value })}
-                ></input>
-
-                {Object.keys(this.state.hackers).map((hackerId) => {
-                    let hacker = this.state.hackers[hackerId]
-                    return( this.isHackerInSearch(hackerId) ?
-                        <div key={hackerId}>
-                            <Card className="p-4 m-2">
-                                <img src="https://thispersondoesnotexist.com/image" width={100} height={100} ></img>
-                                <h1>{hacker.name}</h1>
-                                <p>{hacker.description}</p>
-                                <Button>Hire Me!</Button>
-                            </Card>
-                        </div> : ""
-                    )
-                })} */}
-
-                {/* <Button onClick={this.updateFromServer}> Update</Button> */}
-                {/* <div className="server-content">{this.state.serverContent}</div> */}
             </div>
 
         );
