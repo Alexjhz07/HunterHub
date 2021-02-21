@@ -5,7 +5,7 @@ html, body {
 
 body {
   display: grid; 
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 80%;
 }
 
 header {
@@ -48,12 +48,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 200px;
-}
-
-#heroLeft > h1, #heroLeft > input {
-  position: relative;
-  bottom: 45px;
 }
 
 #heroLeft > h1 {
@@ -85,8 +79,22 @@ main {
   height: 250px;
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#slideShow > input {
+  padding: 7px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  right: 150px;
+}
+
+#humans {
+  width: 100%;
+  display: flex;
 }
 
 .human {
