@@ -43,6 +43,11 @@ class HackList extends Component {
     render() {
         return (
             <div id="slideShow">
+                <input
+                    value={this.state.searchTerm}
+                    onChange={(e) => this.setState({ searchTerm: e.target.value })}
+                ></input>
+
                 <input type="text" placeholder="Search for a Hacker" />
                 <div id="humans">
                 {Object.keys(this.state.hackers).map((hackerId) => {
