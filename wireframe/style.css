@@ -7,7 +7,7 @@ html, body {
 body {
   display: grid; 
   grid-template-rows: 10% 80%;
-  background: url("/wireframe/images/texture1.jpg");
+  background-image: url("./images/texture1.jpg");
   background-size: cover;
 }
 
@@ -63,7 +63,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/wireframe/images/security.jpeg");
+  background: url("./images/security.jpeg");
   background-size: cover;
   color: black;
 }
@@ -96,12 +96,12 @@ main {
 }
 
 #learnMore {
-  background: url("/wireframe/images/webcall.jpeg");
+  background: url("./images/webcall.jpeg");
   background-size: cover;
 }
 
 #join {
-  background: url("/wireframe/images/professional.jpeg");
+  background: url("./images/professional.jpeg");
   background-size: cover;
 }
 
