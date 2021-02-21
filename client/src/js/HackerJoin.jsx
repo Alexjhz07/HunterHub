@@ -56,15 +56,19 @@ class HackerJoin extends Component {
             <div className="hacker-list">
            <main id="formMain">
                 <form id="survey">
-                    <h1>Join HackerHub</h1>
+                    <h1>Join HunterHub</h1>
                     <label htmlFor="name" >Name</label>
-                    <input type="text" name="name" value={this.state.username} onChange={(val)=>this.setState({name: val.target.value})} />
+                    <input type="text" placeholder="John Doe" name="name" value={this.state.username} onChange={(val)=>this.setState({name: val.target.value})} />
                     <label htmlFor="email"  >E-mail</label>
-                    <input type="text" name="name" value={this.state.email} onChange={(val)=>this.setState({email: val.target.value})} />
+                    <input type="email"  placeholder="example@example.com" name="name" value={this.state.email} onChange={(val)=>this.setState({email: val.target.value})} />
                     <label htmlFor="name"  >Description</label>
-                    <input type="text" name="name"  value={this.state.description} onChange={(val)=>this.setState({description: val.target.value})} />
+                    <input type="text" placeholder="Loves finding security flaws!" name="name"  value={this.state.description} onChange={(val)=>this.setState({description: val.target.value})} />
                     <label htmlFor="name">Password</label>
-                    <input type="text" name="name" />
+                    <input type="password" name="name" />
+                    <label htmlFor="name">Image</label>
+                    <input type="file"
+        id="avatar" name="avatar"
+        accept="image/png, image/jpeg"></input>
                     <button type="button"  onClick={this.uploadToServer} >Submit</button>
                 </form>
             </main>

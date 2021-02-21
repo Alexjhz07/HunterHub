@@ -13,17 +13,17 @@ let hackers = {
     "email":"test@exmaple.com",
   },
   'hacker2':{
-    "name":"Cat Nat",
+    "name":"James McGill",
     "description": "Loves hacking and killing bugs! Loves CSS and PHP Injection",
     "email":"test@exmaple.com",
   },
   'hacker3':{
-    "name":"John Appleseed",
+    "name":"Erica Jollyside",
     "description": "An experienced developer who loves finding bugs and killing them! Does some php and some sql injection",
     "email":"test@exmaple.com",
   },
   'hacker4':{
-    "name":"James McGill",
+    "name":"Briana Heartworth",
     "description": "Expert at security testing mobile apps.",
     "email":"test@exmaple.com",
   },
@@ -32,6 +32,22 @@ let hackers = {
     "description": "Expert at security testing mobile apps.",
     "email":"test@exmaple.com",
   },
+  'hacker6':{
+    "name":"Fred Hilbert",
+    "description": "Expert at NodeJs and CSS",
+    "email":"test@exmaple.com",
+  }, 
+   'hacker7':{
+    "name":"John Craning",
+    "description": "Expert at security testing mobile apps.",
+    "email":"test@exmaple.com",
+  },
+  'hacker8':{
+    "name":"Emily Craning",
+    "description": "Expert at security testing mobile apps.",
+    "email":"test@exmaple.com",
+  },
+ 
 };
 // // initlizing mongo db
 // MongoClient.connect(uri, function (err, dbtemp) {

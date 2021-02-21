@@ -58,6 +58,7 @@ class HackList extends Component {
                                 <div class="human-container">
                                     <h4><b>{hacker.name}</b></h4>
                                     <p>{hacker.description}</p>
+                                    <button type="button"  onClick={this.uploadToServer} >Hire me!</button>
                                 </div>
                         </div> : ""
                     )

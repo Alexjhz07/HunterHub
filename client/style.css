@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
   height: 100%;
+  margin: 0px;
 
 }
 
@@ -137,6 +138,8 @@ main {
   justify-content: center;
   align-items: center;
   padding: 100px 10px;
+  padding-bottom: 156px;
+  height: 100%;
 }
 
 #slideShow > input {
@@ -321,8 +324,7 @@ footer {
 #survey > button, #survey > label, #survey > input {
   margin: 5px;
 } 
-
-#survey > button {
+ button {
   width: 80px;
   background-color: #d7d7d7;
   color: white;
@@ -333,9 +335,11 @@ footer {
   color: black;
   border: 0px solid black;
   padding: 10px;
-
+  margin: 5px;
+  color: #606060;
+  font-size: 26px;
 }
-input[type="text"] {
+input {
   border-radius: 21px;
   /* width: 10px; */
   /* line-height: 36px; */
