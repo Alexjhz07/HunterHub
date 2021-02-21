@@ -226,6 +226,7 @@ footer {
 .nav li a {
     color: #000;
     text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav li a:hover {
