@@ -295,3 +295,49 @@ footer {
 
 /*css for join.html*/
 
+#formMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#survey {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#survey > h1 {
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+
+#survey > button, #survey > label, #survey > input {
+  margin: 5px;
+} 
+
+#survey > button {
+  height: 30px;
+  width: 80px;
+  background-color: darkblue;
+  color: white;
+  position: relative;
+  top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
