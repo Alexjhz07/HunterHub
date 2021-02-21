@@ -7,7 +7,7 @@ html, body {
 body {
   display: grid; 
   grid-template-rows: 10% 80%;
-  background: url("/wireframe/images/texture.jpg");
+  background: url("/wireframe/images/texture1.jpg");
   background-size: cover;
 }
 
@@ -22,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-    background-color: rgb(185, 185, 185);
+    background-color: #f8f8f8;
 }
 
 #logo {
