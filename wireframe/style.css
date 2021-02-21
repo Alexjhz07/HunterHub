@@ -53,6 +53,10 @@ main {
   justify-content: center;
 }
 
+.container > p {
+  color: white;
+}
+
 #heroLeft {
   margin: 10px;
   display: flex;
@@ -78,6 +82,10 @@ main {
 #heroRight {
   display: grid;
   grid-template-rows: 50% 50%;
+<<<<<<< HEAD
+=======
+  font-size: 25px;
+>>>>>>> 125733d8a28a895b9510a654a8893a19ce33bb9c
 }
 
 .sideContent {
@@ -88,6 +96,16 @@ main {
   align-items: center;
   text-decoration: none;
   color: black;
+}
+
+#learnMore {
+  background: url("/wireframe/images/webcall.jpeg");
+  background-size: cover;
+}
+
+#join {
+  background: url("/wireframe/images/professional.jpeg");
+  background-size: cover;
 }
 
 #slideShow {
