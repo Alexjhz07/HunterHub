@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HackerHub from "./HackerHub.jsx";
-const wrapper = document.getElementById("container");
+const wrapper = document.getElementById("react-cont");
 
 ReactDOM.render(
         <div>

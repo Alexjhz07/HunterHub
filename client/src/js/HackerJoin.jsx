@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import { Container, Button, Modal, Spinner, Form , Card} from "react-bootstrap";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'universal-cookie';
 import {
   HashRouter,

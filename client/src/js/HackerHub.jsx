@@ -1,5 +1,4 @@
 import React, { Component, useState } from "react";
-import { Container, Button, Modal, Spinner, Form } from "react-bootstrap";
 import {
   HashRouter,
   Switch,
@@ -9,7 +8,6 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'universal-cookie';
 
 import HackList from "./HackList.jsx"
@@ -29,16 +27,12 @@ class HackerHub extends Component {
 
   render() {
     return (
-      <Container fluid> 
         <HashRouter>
 
           <Switch>
-
-
-
             <Route path="/join">
               <div>
-                <Link to='/'><Button>Find Hackers</Button></Link>
+                {/* <Link to='/'><button>Find Hackers</Button></Link> */}
                 <HackerJoin url={this.props.url}  />
               </div>
             </Route>
@@ -46,7 +40,7 @@ class HackerHub extends Component {
             <Route path="/">
               <div>
                 {/* Welcome to HackHub! */}
-                <Link to='/join'><Button>Become a Hacker</Button></Link>
+                {/* <Link to='/join'><Button>Become a Hacker</Button></Link> */}
                 <HackList url={this.props.url} />
               </div>
             </Route>
@@ -59,7 +53,6 @@ class HackerHub extends Component {
           </Switch>
         </HashRouter>
 
-      </Container>
     );
   }
 }

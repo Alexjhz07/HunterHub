@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import { Container, Button, Modal, Spinner, Form, Card } from "react-bootstrap";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
@@ -43,9 +42,23 @@ class HackList extends Component {
 
     render() {
         return (
-            <div className="hacker-list">
-
-                <input
+            <div id="slideShow">
+                <input type="text" placeholder="Search for a Hacker" />
+                <div id="humans">
+                {Object.keys(this.state.hackers).map((hackerId) => {
+                    let hacker = this.state.hackers[hackerId]
+                    return( this.isHackerInSearch(hackerId) ?
+                        <div class="card" key={hackerId}>
+                                <img src="https://thispersondoesnotexist.com/image" class="profile-image" />
+                                <div class="human-container">
+                                    <h4><b>{hacker.name}</b></h4>
+                                    <p>{hacker.description}</p>
+                                </div>
+                        </div> : ""
+                    )
+                    })}
+                </div>
+                {/* <input
                     value={this.state.searchTerm}
                     onChange={(e) => this.setState({ searchTerm: e.target.value })}
                 ></input>
@@ -62,12 +75,12 @@ class HackList extends Component {
                             </Card>
                         </div> : ""
                     )
-                })}
+                })} */}
 
                 {/* <Button onClick={this.updateFromServer}> Update</Button> */}
                 {/* <div className="server-content">{this.state.serverContent}</div> */}
-
             </div>
+
         );
     }
 }

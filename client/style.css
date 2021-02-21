@@ -1,0 +1,295 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+    overflow: auto;
+}
+
+body {
+  display: grid; 
+  grid-template-rows: 10% 80%;
+  background-image: url("./images/texture1.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100%;
+
+}
+
+header {
+  height: 100%;
+  width: 100%;
+}
+
+#logoContainer {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: #e4e4e4;
+}
+
+#logo {
+  box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+}
+
+main {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid; 
+  grid-template-rows: 80% 20%;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.container > p {
+  color: white;
+}
+
+#heroLeft {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/security.jpeg");
+  background-size: cover;
+  color: black;
+}
+
+#container > h1 {
+  font-size: 60px;
+  color: white;
+}
+
+#heroLeft > input {
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+#heroRight {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  font-size: 25px;
+}
+
+#heroRight > a{
+  transition: 0.3s;
+}
+
+.container:hover {
+  background-color: rgba(0,0,0,0.6);
+  border: none;
+}
+
+#heroRight > a:hover {
+  font-size: 30px;
+}
+
+.sideContent {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#learnMore {
+  background: url("./images/webcall.jpeg");
+  background-size: cover;
+}
+
+#join {
+  background: url("./images/professional.jpeg");
+  background-size: cover;
+}
+
+#slideShow {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10px;
+}
+
+#slideShow > input {
+  padding: 7px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  background: #ffffff;
+  border: 2px #dedede solid;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  line-height: 30px;
+  padding: 10px;
+}
+
+#slideShow > input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+#humans {
+  width: 100%;
+  display: flex;
+  padding:10px;
+  border:0px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.human {
+  border: 2px solid blue; 
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+}
+
+footer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+/* Hamburger Nav Bar */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    display: block;
+    border-radius: 5px;
+}
+
+#bar1 {
+     transform: translateY(-4px)
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change .bar {
+    background-color: #000;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.nav li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0px;
+}
+
+.nav {
+    padding: 0;
+    margin: 0px 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.change {
+    display: block;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle,#e4e4e4,#d4d4d4);
+    border-radius: 50%;
+    opacity: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.menu-bg, #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  margin: 3px
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.profile-image{
+  width:50%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
