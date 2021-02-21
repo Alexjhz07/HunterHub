@@ -17,6 +17,7 @@ class HackList extends Component {
             pickerValue: "",
             serverContent: "",
             hackers:"",
+            searchTerm:"",
         }
         this.updateFromServer();
     }
@@ -32,23 +33,33 @@ class HackList extends Component {
     }
 
 
+    isHackerInSearch = (hackerId) =>{
+        let hacker= this.state.hackers[hackerId];
+        let searchTerm = this.state.searchTerm.toLowerCase();
+        return (hacker.name.toLowerCase().indexOf(searchTerm) != -1 
+             || hacker.description.toLowerCase().indexOf(searchTerm) != -1
+             || hacker.email.toLowerCase().indexOf(searchTerm) != -1)
+    }
+
     render() {
         return (
             <div className="hacker-list">
-                {/* <input
-                    value={this.state.pickerValue}
-                    onChange={(e) => this.setState({ pickerValue: e.target.value })}
-                ></input> */}
+
+                <input
+                    value={this.state.searchTerm}
+                    onChange={(e) => this.setState({ searchTerm: e.target.value })}
+                ></input>
 
                 {Object.keys(this.state.hackers).map((hackerId) => {
                     let hacker = this.state.hackers[hackerId]
-                    return(<div key={hackerId}>
-                        <Card className="p-4 m-2">
-                            <h1>{hacker.name}</h1>
-                            <p>{hacker.description}</p>
-                        </Card>
-                    
-                    </div>)
+                    return( this.isHackerInSearch(hackerId) ?
+                        <div key={hackerId}>
+                            <Card className="p-4 m-2">
+                                <h1>{hacker.name}</h1>
+                                <p>{hacker.description}</p>
+                            </Card>
+                        </div> : ""
+                    )
                 })}
 
                 {/* <Button onClick={this.updateFromServer}> Update</Button> */}

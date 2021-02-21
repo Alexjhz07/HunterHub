@@ -9,15 +9,28 @@ var cookieParser = require('cookie-parser')
 let hackers = {
   'hacker1':{
     "name": "Bob Hackfish",
-    "description": "i like hackin"
+    "description": "Loves killing bugs. Has experience in java and c++",
+    "email":"test@exmaple.com",
   },
   'hacker2':{
     "name":"Cat Nat",
-    "description": "i love hacking"
+    "description": "Loves hacking and killing bugs! Loves CSS and PHP Injection",
+    "email":"test@exmaple.com",
   },
   'hacker3':{
-    "name":"Cat Nat",
-    "description": "i love hacking"
+    "name":"John Appleseed",
+    "description": "An experienced developer who loves finding bugs and killing them! Does some php and some sql injection",
+    "email":"test@exmaple.com",
+  },
+  'hacker4':{
+    "name":"James McGill",
+    "description": "Expert at security testing mobile apps.",
+    "email":"test@exmaple.com",
+  },
+  'hacker5':{
+    "name":"John Craning",
+    "description": "Expert at security testing mobile apps.",
+    "email":"test@exmaple.com",
   },
 };
 // // initlizing mongo db
@@ -37,7 +50,6 @@ let hackers = {
 
 // });
 
-if (process.env.isHeroku == "true");
 
 app.use(fileUpload({
   limits: { fileSize: 50 * 1024 * 1024 },
