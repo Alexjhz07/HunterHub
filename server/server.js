@@ -47,7 +47,6 @@ let hackers = {
     "description": "Can help prevent MITM and XSS attacks.",
     "email":"test@exmaple.com",
   },
- 
 };
 // // initlizing mongo db
 // MongoClient.connect(uri, function (err, dbtemp) {
