@@ -55,8 +55,10 @@ class HackList extends Component {
                     return( this.isHackerInSearch(hackerId) ?
                         <div key={hackerId}>
                             <Card className="p-4 m-2">
+                                <img src="https://thispersondoesnotexist.com/image" width={100} height={100} ></img>
                                 <h1>{hacker.name}</h1>
                                 <p>{hacker.description}</p>
+                                <Button>Hire Me!</Button>
                             </Card>
                         </div> : ""
                     )
