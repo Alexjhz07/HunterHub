@@ -28,20 +28,6 @@ header {
   background-color: red;
 }
 
-nav {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-
-nav > ul {
-  margin: 2%;
-}
-
-ul > a{
-  text-decoration: none;
-}
-
 main {
   height: 100%;
   width: 80%;
@@ -115,4 +101,95 @@ footer {
   height: 100%;
   width: 100%;
   background-color: blue;
+}
+
+/* Hamburger Nav Bar */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b81568;
+    display: block;
+    border-radius: 5px;
+}
+
+#bar1 {
+     transform: translateY(-4px)
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change .bar {
+    background-color: black;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0px;
+}
+
+.nav {
+    padding: 0;
+    margin: 0px 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.change {
+    display: block;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle,#e94498,#b81568);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.menu-bg, #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
 }
