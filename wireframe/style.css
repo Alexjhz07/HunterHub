@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: #565656;
+  background: #ffffff;
 }
 
 body {
@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-    background-color: white;
+    background-color: rgb(185, 185, 185);
 }
 
 #logo {
