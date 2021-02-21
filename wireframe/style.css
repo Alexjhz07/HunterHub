@@ -42,11 +42,13 @@ main {
 
 #heroLeft {
   margin: 10px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("/wireframe/images/security.jpeg");
+  background-size: cover;
+  color: black;
 }
 
 #heroLeft > h1 {
