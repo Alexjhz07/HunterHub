@@ -5,7 +5,7 @@ html, body {
 
 body {
   display: grid; 
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 80%;
 }
 
 header {
@@ -23,9 +23,8 @@ header {
 
 #logo {
   box-sizing: border-box;
-  width: 50px;
-  height: 20px;
-  background-color: red;
+  width: 75px;
+  height: 75px;
 }
 
 main {
@@ -43,17 +42,13 @@ main {
 
 #heroLeft {
   margin: 10px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 200px;
-}
-
-#heroLeft > h1, #heroLeft > input {
-  position: relative;
-  bottom: 45px;
+  background: url("/wireframe/images/security.jpeg");
+  background-size: cover;
+  color: black;
 }
 
 #heroLeft > h1 {
@@ -85,8 +80,22 @@ main {
   height: 250px;
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#slideShow > input {
+  padding: 7px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  right: 150px;
+}
+
+#humans {
+  width: 100%;
+  display: flex;
 }
 
 .human {
@@ -115,7 +124,7 @@ footer {
 .bar {
     height: 5px;
     width: 100%;
-    background-color: #b81568;
+    background-color: #000;
     display: block;
     border-radius: 5px;
 }
@@ -129,7 +138,7 @@ footer {
 }
 
 .change .bar {
-    background-color: black;
+    background-color: white;
 }
 
 .change #bar1 {
@@ -145,7 +154,7 @@ footer {
 }
 
 .nav li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -173,7 +182,7 @@ footer {
     z-index: 1;
     width: 0;
     height: 0;
-    background: radial-gradient(circle,#e94498,#b81568);
+    background: radial-gradient(circle,#000000,#4e4e4e);
     border-radius: 50%;
     transition: 0.3s ease;
 }
