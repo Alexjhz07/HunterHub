@@ -101,12 +101,18 @@ main {
 
 #slideShow > input {
   padding: 7px;
-  width: 250px;
+  width: 100%;
   border-radius: 20px;
   position: relative;
-  right: 150px;
-  background: #3b3b3b;
-  border: 1px black;
+  background: #ffffff;
+  border: 2px #dedede solid;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  line-height: 30px;
+  padding: 10px;
+}
+#slideShow > input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ECE;
 }
 
 #humans {
