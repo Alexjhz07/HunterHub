@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background: #565656;
 }
 
 body {
@@ -91,6 +92,8 @@ main {
   border-radius: 20px;
   position: relative;
   right: 150px;
+  background: #3b3b3b;
+  border: 1px black;
 }
 
 #humans {
