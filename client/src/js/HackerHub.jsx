@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'universal-cookie';
 
 import HackList from "./HackList.jsx"
-import JoinHacker from "./HackerJoin.jsx"
+import HackerJoin from "./HackerJoin.jsx"
 
 
 const cookies = new Cookies();
@@ -33,25 +33,28 @@ class HackerHub extends Component {
         <HashRouter>
 
           <Switch>
-            <Route path="/:id" render={({ match }) => (
-              <div>
-              </div>
-            )} />
 
+
+
+            <Route path="/join">
+              <div>
+                <Link to='/'><Button>Find Hackers</Button></Link>
+                <HackerJoin url={this.props.url}  />
+              </div>
+            </Route>
 
             <Route path="/">
               <div>
                 {/* Welcome to HackHub! */}
-                <JoinHacker url={this.props.url} />
-              </div>
-            </Route>
-
-            <Route path="/join">
-              <div>
-                {/* Welcome to HackHub! */}
+                <Link to='/join'><Button>Become a Hacker</Button></Link>
                 <HackList url={this.props.url} />
               </div>
             </Route>
+
+            <Route path="/:id" render={({ match }) => (
+              <div>
+              </div>
+            )} />
 
           </Switch>
         </HashRouter>
