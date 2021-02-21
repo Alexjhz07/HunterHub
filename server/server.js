@@ -9,17 +9,17 @@ var cookieParser = require('cookie-parser')
 let hackers = {
   'hacker1':{
     "name": "Bob Hackfish",
-    "description": "Loves killing bugs. Has experience in java and c++",
+    "description": "Loves hunting down bugs. Has experience testing Java and C++ applications.",
     "email":"test@exmaple.com",
   },
   'hacker2':{
     "name":"James McGill",
-    "description": "Loves hacking and killing bugs! Loves CSS and PHP Injection",
+    "description": "Passionate about building secure systems! Loves to test for SQL and PHP Injection",
     "email":"test@exmaple.com",
   },
   'hacker3':{
     "name":"Erica Jollyside",
-    "description": "An experienced developer who loves finding bugs and killing them! Does some php and some sql injection",
+    "description": "An experienced developer who loves finding bugs and resolving them! Has experience with XSS attacks",
     "email":"test@exmaple.com",
   },
   'hacker4':{
@@ -29,22 +29,22 @@ let hackers = {
   },
   'hacker5':{
     "name":"John Craning",
-    "description": "Expert at security testing mobile apps.",
+    "description": "Expert at security for NodeJS applications.",
     "email":"test@exmaple.com",
   },
   'hacker6':{
     "name":"Fred Hilbert",
-    "description": "Expert at NodeJs and CSS",
+    "description": "Lots of experience with at NodeJs and PHP.",
     "email":"test@exmaple.com",
   }, 
    'hacker7':{
     "name":"John Craning",
-    "description": "Expert at security testing mobile apps.",
+    "description": "Can help find issues with server setups and SSL. ",
     "email":"test@exmaple.com",
   },
   'hacker8':{
     "name":"Emily Craning",
-    "description": "Expert at security testing mobile apps.",
+    "description": "Can help prevent MITM and XSS attacks.",
     "email":"test@exmaple.com",
   },
  
