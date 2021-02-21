@@ -23,9 +23,8 @@ header {
 
 #logo {
   box-sizing: border-box;
-  width: 50px;
-  height: 20px;
-  background-color: red;
+  width: 75px;
+  height: 75px;
 }
 
 main {
@@ -115,7 +114,7 @@ footer {
 .bar {
     height: 5px;
     width: 100%;
-    background-color: #b81568;
+    background-color: #000;
     display: block;
     border-radius: 5px;
 }
@@ -129,7 +128,7 @@ footer {
 }
 
 .change .bar {
-    background-color: black;
+    background-color: white;
 }
 
 .change #bar1 {
@@ -145,7 +144,7 @@ footer {
 }
 
 .nav li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -173,7 +172,7 @@ footer {
     z-index: 1;
     width: 0;
     height: 0;
-    background: radial-gradient(circle,#e94498,#b81568);
+    background: radial-gradient(circle,#000000,#4e4e4e);
     border-radius: 50%;
     transition: 0.3s ease;
 }
