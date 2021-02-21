@@ -46,15 +46,15 @@ class HackList extends Component {
                 <input
                     value={this.state.searchTerm}
                     onChange={(e) => this.setState({ searchTerm: e.target.value })}
+                    placeholder="Search for a Hacker"
                 ></input>
 
-                <input type="text" placeholder="Search for a Hacker" />
                 <div id="humans">
                 {Object.keys(this.state.hackers).map((hackerId) => {
                     let hacker = this.state.hackers[hackerId]
                     return( this.isHackerInSearch(hackerId) ?
                         <div class="card" key={hackerId}>
-                                <img src="https://thispersondoesnotexist.com/image" class="profile-image" />
+                                <img src={"./img/" + hackerId + ".jpeg"} class="profile-image" />
                                 <div class="human-container">
                                     <h4><b>{hacker.name}</b></h4>
                                     <p>{hacker.description}</p>

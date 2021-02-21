@@ -293,3 +293,59 @@ footer {
   padding: 2px 16px;
 }
 
+
+#formMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#survey {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-bottom: 108px;
+}
+
+#survey > h1 {
+  font-size: 60px; 
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  color: #666666;
+  padding: 7px;
+  border-radius: 69px;
+  margin-bottom: 0px;
+}
+
+#survey > button, #survey > label, #survey > input {
+  margin: 5px;
+} 
+
+#survey > button {
+  width: 80px;
+  background-color: #d7d7d7;
+  color: white;
+  position: relative;
+  top: 12px;
+  border-radius: 10px;
+  width: 100%;
+  color: black;
+  border: 0px solid black;
+  padding: 10px;
+
+}
+input[type="text"] {
+  border-radius: 21px;
+  /* width: 10px; */
+  /* line-height: 36px; */
+  padding: 10px;
+  border: 0px;
+}
+
+
+#survey > button, #survey > label, #survey > input {
+  margin: 5px;
+  color: #606060;
+  font-size: 26px;
+}

@@ -54,6 +54,20 @@ class HackerJoin extends Component {
     render() {
         return (
             <div className="hacker-list">
+           <main id="formMain">
+                <form id="survey">
+                    <h1>Join HackerHub</h1>
+                    <label htmlFor="name" >Name</label>
+                    <input type="text" name="name" value={this.state.username} onChange={(val)=>this.setState({name: val.target.value})} />
+                    <label htmlFor="email"  >E-mail</label>
+                    <input type="text" name="name" value={this.state.email} onChange={(val)=>this.setState({email: val.target.value})} />
+                    <label htmlFor="name"  >Description</label>
+                    <input type="text" name="name"  value={this.state.description} onChange={(val)=>this.setState({description: val.target.value})} />
+                    <label htmlFor="name">Password</label>
+                    <input type="text" name="name" />
+                    <button type="button"  onClick={this.uploadToServer} >Submit</button>
+                </form>
+            </main>
                 {/* <h1>JOIN</h1> */}
                 {/* <input
                     value={this.state.pickerValue}
@@ -64,8 +78,9 @@ class HackerJoin extends Component {
                     onChange={(e) => this.setState({ pickerValue: e.target.value })}
                 ></input> */}
                 {this.state.shouldRe ? <Redirect to="/"/> : ""}
-     
-                                <Card className="m-5">
+                                {/* <Card className="m-5">
+
+ 
                                         <Card.Body>
                                                 <Card.Title>Join HackerHub</Card.Title>
                                                 <Form>
@@ -97,7 +112,7 @@ class HackerJoin extends Component {
                                                         </Form.Group>
                                                 </Form> 
                                         </Card.Body>
-                                </Card>
+                                </Card> */}
 
 
                 {/* <Button onClick={this.updateFromServer}> Update</Button> */}
