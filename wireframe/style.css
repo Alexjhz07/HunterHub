@@ -48,6 +48,15 @@ main {
   grid-template-columns: 70% 30%;
 }
 
+#container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -55,6 +64,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .container > p {
@@ -72,7 +82,7 @@ main {
   color: black;
 }
 
-.container > h1 {
+#container > h1 {
   font-size: 60px;
   color: white;
 }
@@ -87,6 +97,18 @@ main {
   display: grid;
   grid-template-rows: 50% 50%;
   font-size: 25px;
+}
+
+#heroRight > a{
+  transition: 0.3s;
+}
+
+.container:hover {
+  background-color: black;
+}
+
+#heroRight > a:hover {
+  font-size: 30px;
 }
 
 .sideContent {
