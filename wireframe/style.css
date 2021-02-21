@@ -186,7 +186,7 @@ footer {
 }
 
 .change .bar {
-    background-color: white;
+    background-color: #000;
 }
 
 .change #bar1 {
@@ -202,7 +202,7 @@ footer {
 }
 
 .nav li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -230,7 +230,7 @@ footer {
     z-index: 1;
     width: 0;
     height: 0;
-    background: radial-gradient(circle,#000000,#4e4e4e);
+    background: radial-gradient(circle,#e4e4e4,#d4d4d4);
     border-radius: 50%;
     transition: 0.3s ease;
 }
